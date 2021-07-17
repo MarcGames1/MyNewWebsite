@@ -1,41 +1,64 @@
-import React from "react"
-import { Col } from "react-bootstrap"
+import React, { useState } from "react"
+import { Button, ButtonGroup, Col, ToggleButton } from "react-bootstrap"
 import Facebook from "./facebook"
 import Mail from './mail'
+import Whatsapp from './whatsapp'
+
+
+// export type Color = '#FFFFFF' 
+// export type Height = '50px'
+// export type Url ='www.facebook.com'
 
 
 
-export type Color = '#FFFFFF' 
-export type Height = '50px'
-export type Url ='www.facebook.com'
 
-
-
-
- const SocialMedia = (props: {
+ function SocialMedia (props: {
    
-  col_md:  number | boolean | { span?: (boolean | "auto" | (number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12")) | undefined; offset?: (number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12") | undefined; order?: ((number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12") | "first" | "last") | undefined } | undefined }) =>{
+  col_md:  number | boolean | { span?: (boolean | "auto" | (number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12")) | undefined; offset?: (number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12") | undefined; order?: ((number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12") | "first" | "last") | undefined } | undefined })
+  
+  {
 
 
 
+    
+    const [color, setColor] = useState('#ffffff8c')
 
-let color : string = '#FFFFFF' as Color
-let height :string = '50px' as Height
-let url :string = 'www.facebook.com'
+    const changeColor=(color: string)=>{
+      setColor(color)
+    }
+
+
+    let height :string = '30px' 
+   
+    let FacebookUrl :string = 'www.facebook.com'
+    let whatsappUrl :string ='https://wa.me/+40751606444'
+
+   
     return(
       <>
-<Col md={props.col_md} className='d-inline-flex justify-content-between'>
-   
+      
+<Col md={props.col_md} className='justify-content-between'>
+
+  <ButtonGroup>
+  <Button variant={'dark'}>    
   <Mail color = {color} height={height} />
-  <Facebook color = {color} height={height} url={url}/>
-  <Facebook  color = {color} height={height} url={url}/>
+  </Button>
+  <Button variant={'dark'}>    
+  <Facebook color = {color} height={height} url={FacebookUrl}/>
+  </Button>
+  <Button variant={'dark'}> 
+  <Whatsapp  color = {color} height={height} url={whatsappUrl}/>
+  </Button>
+  </ButtonGroup>
   </Col>
 
 
    
   <style >{`
-    #__next{
-    background-color:black;
+   .icon{
+   
+    margin:0;
+    padding:0;
     }
     `}
   </style>
@@ -45,4 +68,13 @@ let url :string = 'www.facebook.com'
 }
 
 
+
+
+
+
+
 export default SocialMedia
+
+function setChecked(checked: boolean): void {
+  throw new Error("Function not implemented.")
+}

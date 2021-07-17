@@ -11,8 +11,7 @@ export default function Home() {
   return (
     <>
    <MainNav />
-  <SocialMedia col_md={4}/>
-  <SocialMedia col_md={4}/>
+ 
    
   </>
   )
