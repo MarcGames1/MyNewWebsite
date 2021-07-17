@@ -2,11 +2,17 @@ const withImages = require('next-images')
 
 module.exports = {
     ...withImages(),
+    
     future: {
         webpack5: true,
     },
+    images: {
+      domains: ['unsplash.com'],
+    },
 
 }
+
+
 module.exports = {
   reactStrictMode: true,
   
