@@ -6,9 +6,11 @@ import React from 'react'
 import WhatsappSticky from '../components/Phone-only/stickyWhatsapp'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (<>
+
+  
+  return (<div id={'particles-js'}>
   <Component {...pageProps} />  
   <WhatsappSticky />
- </> )
+ </div> )
 }
 export default MyApp
