@@ -1,6 +1,6 @@
 import React from "react"
 import {Container, Navbar, Nav, NavDropdown } from "react-bootstrap"
-import SocialMedia from "./SocialMedia"
+import SocialMedia from "../Social-Media/SocialMedia"
 
 
 

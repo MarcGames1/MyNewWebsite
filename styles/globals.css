@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode:hard-light ;
+  background-attachment: fixed;
 background-color:rgba(0, 0, 0, 0.863);
 
 
@@ -25,3 +26,11 @@ a {
 :root{
 --background-image-main: url(/img/background/bg.webp);
 }
+
+
+/*  DE pus Query pt Iphone */
+/* @media screen {
+  body{
+    background-attachment: scroll;
+  }
+} */

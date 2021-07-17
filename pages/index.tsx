@@ -1,8 +1,8 @@
 import React from 'react'
+import FirstSection from '../components/FirstSection/FirstSection'
 import MainNav from '../components/navbar/mainNav'
-import SocialMedia from '../components/navbar/SocialMedia'
-import BotNav from '../components/navbar/SocialMedia'
-import WhatsappSticky from '../components/stickyWhatsapp'
+
+
 
 export default function Home() {
 
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
    <MainNav />
- 
+ <FirstSection />
    
   </>
   )
