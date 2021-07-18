@@ -1,43 +1,186 @@
-import { Container ,Alert, Col, Row } from "react-bootstrap"
-import FormularContact from "../FormularContact/FormularContact"
-import Checkmark from "../SVG.components/checkmark"
-import LaptopContainer from "./laptop"
+import React from "react"
+import { Container, Col, Row } from "react-bootstrap"
+import Whatsapp from "../Social-Media/whatsapp"
+import AdsSvg from "../SVG.components/ads"
+import SeoSvg from "../SVG.components/seo"
+import WebdevSvg from "../SVG.components/webdev"
+import ServiceCard from "./ServiceCard"
 
 
-const SecondSection = ()=>{
 
+const SecondSection = () => {
 
-    return(<>
-    
-  
-<Container className='d-md-flex' fluid>
+    class Service {
+        type: string
+        title: string
+        description: string
+        color:string
+        href:string
 
-    <Col className=" d-block d-sm-block d-md-inline-block" >
-
-    <Alert className="animate__animated animate__fadeInLeft" variant={'success'} >
-        <Checkmark height={20} color={'currentColor'}/>Afacerea ta online incepe cu un website modern
-    </Alert>
-       
-    <Alert className="animate__animated animate__fadeInLeft" variant={'dark'} >
-        <Checkmark height={20} color={'currentColor'}/>Dezvoltare Website in cel mai scurt timp dupa nevoile tale 
-    </Alert>
-       
-    <Alert className="animate__animated animate__fadeInRight" variant={'dark'} >
-       <Checkmark height={20} color={'currentColor'}/>Optimizare Seo , Seo on page si plan dedicat lunar pentru ca tu sa urci printre primele rezultate de cautare Google in cel mai scurt timp
-    </Alert>
-    <Alert className="animate__animated animate__fadeInLeft" variant={'dark'} >
-        <Checkmark height={20} color={'currentColor'}/>Stabilire si implementare obiective in Google Analitycs
-    </Alert>
-    </Col>
-   
-<Col className=" d-block d-sm-block d-md-inline-block" lg={6} sm={12}  md={6}>
-    <FormularContact  />
-</Col>
-</Container>
-     </>)
-
+        constructor (type: string, title: string, description: string, color:string, href:string) {
+          this.type = type
+          this.title = title
+          this.description = description
+          this.color = color
+          this.href = href
+        }
         
-    
+    }
+
+    const developer =new Service('web', 'Web Developer', 'descriere webdev','red','/creare-website')
+    const seo = new Service ('seo', 'SEO', 'Descriere SEO','#00A0F0','/seo')
+    const ads = new Service ('ads', 'Google Ads', 'Descriere Ads','#00EBAC','/google-ads')
+
+   
+    return (<>
+
+        <Container fluid>
+            <Row id="serviceMainBlock">
+                
+                <ServiceCard class={developer.type}
+                    title={developer.title}
+                    description={developer.description}
+                    href = {developer.href}
+                ><WebdevSvg height={48} color={'red'}/>
+                </ServiceCard>
+
+
+               <ServiceCard 
+               
+                class= {seo.type}
+                title = {seo.title}
+                description = {seo.description}
+                href = {seo.href}
+            >
+                <SeoSvg height={48} color={seo.color} />
+                </ServiceCard>
+
+
+                <ServiceCard 
+               
+               class= {ads.type}
+               title = {ads.title}
+               description = {ads.description}
+               href = {ads.href}
+           >
+               <AdsSvg height={48} color={ads.color} />
+               </ServiceCard>
+
+            </Row>
+
+        </Container>
+
+        <style global jsx>
+            {`
+            div#services {
+    background: #f7f6f6;
+    text-align: center;
+  
+    padding: 25px;
+    overflow: hidden;
+}
+.ServiceInner h2 {
+    font-size: 35px;
+    color: #000000;
+}
+
+.ServiceInner p {
+    font-size: 25px;
+    padding: 20px;
+    color: #313d4a;
+    margin-bottom: 20px;
+}
+
+div#serviceMainBlock {
+    text-align: center;
+    margin: auto;
+    display:flex;
+    margin-bottom:1rem;
+    }
+
+.ServiceBox {
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+
+.ServiceBox.web {
+    background: white;
+    padding: 30px 10px;
+}
+
+.ServiceBox.web p {
+    font-size: 20px;
+    padding: 41px;
+}
+
+.ServiceBox.web h2 {
+    color: #ff3a46;
+}
+
+/* seo */
+
+
+.ServiceBox.seo {
+    background: white;
+    padding: 30px 10px;
+}
+
+.ServiceBox.seo p {
+    font-size: 20px;
+    padding: 41px;
+}
+
+.ServiceBox.seo h2 {
+    color: #00A0F0;
+}
+
+/* ads */
+
+
+.ServiceBox.ads {
+    background: white;
+    padding: 30px 10px;
+}
+
+.ServiceBox.ads p {
+    font-size: 20px;
+    padding: 41px;
+}
+
+.ServiceBox.ads h2 {
+    color: #00EBAC;
+}
+.ServiceBox {
+    box-shadow: 4px 4px 20px #afafaf;
+    transition-duration: 0.6s;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.ServiceBox.web:hover{
+    box-shadow: -3px 3px 15px #FF3A46;
+    cursor: pointer;
+}
+
+.ServiceBox.seo:hover{
+    box-shadow: -3px 3px 15px #00A0F0;
+    cursor: pointer;
+}
+.ServiceBox.ads:hover{
+    box-shadow: -3px 3px 15px #00EBAC;
+    cursor: pointer;
+}
+
+.ServiceBox p {
+    color: #3a3939;
+}
+            `}
+        </style>
+    </>)
 }
 
 export default SecondSection

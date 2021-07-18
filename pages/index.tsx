@@ -1,9 +1,9 @@
 import React from 'react'
-import { Alert, Col } from 'react-bootstrap'
-import SecondSection from '../components/SecondSection/SecondSection'
-import FormularContact from '../components/FormularContact/FormularContact'
 import MainNav from '../components/navbar/mainNav'
 import FirstSection from '../components/FirstSection/FirstSection'
+import FormularText from '../components/Formular+Text/Formular+Text'
+import SecondSection from '../components/SecondSection/SecondSection'
+
 
 
 
@@ -15,7 +15,8 @@ export default function Home() {
     <>
    <MainNav />
    <FirstSection />
- <SecondSection />
+   <SecondSection />
+ <FormularText />
  
    
   </>
