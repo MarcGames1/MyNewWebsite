@@ -16,9 +16,7 @@ export default function Home() {
    <MainNav />
    <FirstSection />
  <SecondSection />
- <Col md={6}>
-   <FormularContact />
- </Col>
+ 
    
   </>
   )
