@@ -1,5 +1,6 @@
 import React from "react"
 import { Jumbotron, Button } from "react-bootstrap"
+import styles from 'MainJumbotron.module.css'
 
 const MainJumbotron = () =>{
 
@@ -14,15 +15,50 @@ const MainJumbotron = () =>{
         <hr className="my-2" />
         <p className='animate__animated animate__bounceInRight' >Afla cum te pot ajuta sa iti cresti afacerea in mediul online</p>
        
-          <Button className='animate__animated animate__bounceInLeft' href='#' color="primary">Citeste mai mult</Button>
+          <Button className='rounded animate__animated animate__bounceInLeft' 
+          id='hero'
+          href='#' ><span className='btn-text'>Citeste mai mult</span></Button>
        
       </Jumbotron>
     </div>
 
-    <style jsx>{`
+    <style global jsx>{`
       
-      {/* background-color:black; */}
-      
+    #hero{
+      font-size:1.5rem;
+    }
+  #hero::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: var(--bs-cyan) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#hero .btn-text {
+  color: white !important;
+  mix-blend-mode: screen;
+}
+#hero:hover::before {
+  background: #dc7300;
+  width: 100%;
+}
+.rounded  {
+  border-radius: 50px !important;
+}
+
+.rounded::before {
+  border-radius: 50px !important;
+  width: 25%;
+  background: #00F0B5 !important;
+}
+.rounded:hover::before {
+  background: #00F0B5;
+  width: 100%;
+}
+
       `}</style>
     </>)
 }
