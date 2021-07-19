@@ -28,6 +28,7 @@ const ServiceCard = (props: {
                     <p>
                     {descrieri.map((text)=><Alert  variant='light' key={text}><Checkmark height={20} color={props.color}/>{text}</Alert>)}
                     </p>
+                    <Button variant='light'>Afla mai multe detalii</Button>
                     </a>
 
                 </div>

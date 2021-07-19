@@ -27,9 +27,9 @@ const SecondSection = () => {
         
     }
 
-    const developer =new Service('web', 'Web Developer', 'descriere webdev','red','/creare-website')
-    const seo = new Service ('seo', 'SEO', 'Descriere SEO','#00A0F0','/seo')
-    const ads = new Service ('ads', 'Google Ads', 'chestia1, chestia 2','#00EBAC','/google-ads')
+    const developer =new Service('web', 'Web Developer', 'Creare website profesional ,Website facut dupa nevoile si viziunea afacerii tale','red','/creare-website')
+    const seo = new Service ('seo', 'SEO', 'Seo On Page,Seo Off Page','#00A0F0','/seo')
+    const ads = new Service ('ads', 'Google Ads', 'Optimizare Campanii Google Ads','#00EBAC','/google-ads')
 
    
     return (<>

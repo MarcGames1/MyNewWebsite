@@ -19,11 +19,11 @@ const MainNav = () =>{
     <Nav className="me-auto">
       <Nav.Link href="/despre">Despre Mine</Nav.Link>
       <NavDropdown title="Servicii" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="/website">Creare Site De Prezentare</NavDropdown.Item>
+        <NavDropdown.Item href="/creare-website">Creare Site De Prezentare</NavDropdown.Item>
         <NavDropdown.Item href="/seo">SEO</NavDropdown.Item>
         <NavDropdown.Item href="/google-ads">Google Ads</NavDropdown.Item>
       </NavDropdown>
-       
+      <Nav.Link href="/portofoliu">Portofoliu</Nav.Link>
       <Nav.Link href="/blog">Blog</Nav.Link>
     </Nav>
     
