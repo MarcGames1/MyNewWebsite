@@ -29,42 +29,46 @@ const SecondSection = () => {
 
     const developer =new Service('web', 'Web Developer', 'descriere webdev','red','/creare-website')
     const seo = new Service ('seo', 'SEO', 'Descriere SEO','#00A0F0','/seo')
-    const ads = new Service ('ads', 'Google Ads', 'Descriere Ads','#00EBAC','/google-ads')
+    const ads = new Service ('ads', 'Google Ads', 'chestia1, chestia 2','#00EBAC','/google-ads')
 
    
     return (<>
 
         <Container fluid>
             <Row id="serviceMainBlock">
-                
+            <Col lg={4} md={12}> 
                 <ServiceCard class={developer.type}
                     title={developer.title}
                     description={developer.description}
                     href = {developer.href}
-                ><WebdevSvg height={48} color={'red'}/>
+                    color={developer.color}
+                ><WebdevSvg height={48} color={developer.color}/>
                 </ServiceCard>
-
-
+</Col>
+                <Col lg={4} md={12}> 
                <ServiceCard 
                
                 class= {seo.type}
                 title = {seo.title}
                 description = {seo.description}
                 href = {seo.href}
+                color={seo.color}
             >
                 <SeoSvg height={48} color={seo.color} />
                 </ServiceCard>
-
-
+</Col>
+                <Col lg={4} md={12}> 
                 <ServiceCard 
                
                class= {ads.type}
                title = {ads.title}
                description = {ads.description}
                href = {ads.href}
-           >
+               color={ads.color}
+               >
                <AdsSvg height={48} color={ads.color} />
                </ServiceCard>
+            </Col>
 
             </Row>
 
@@ -101,7 +105,7 @@ div#serviceMainBlock {
 .ServiceBox {
     float: left;
     display: inline-block;
-    width: 30%;
+    width: 100%;
 }
 
 

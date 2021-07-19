@@ -1,5 +1,6 @@
 import React from "react"
-import { Col, Button } from "react-bootstrap"
+import { Col, Button, Alert } from "react-bootstrap"
+import Checkmark from "../SVG.components/checkmark"
 
 
 const ServiceCard = (props: { 
@@ -7,26 +8,29 @@ const ServiceCard = (props: {
     title: string
     description: string
     href: string
+    color:string
     children: React.ReactNode
 }) =>{
 
 
     const classVariant ='ServiceBox web '+ props.class
 
+    const descrieri = props.description.split(',')
+
     return (<>
     
-    <Col className={classVariant}>
+    <div className={classVariant}>
                     <a href={props.href}>
                     <div className="fa fa-code" aria-hidden="true">
                         {props.children}
                         </div>
                     <h2> {props.title} </h2>
                     <p>
-                       {props.description}
+                    {descrieri.map((text)=><Alert  variant='light' key={text}><Checkmark height={20} color={props.color}/>{text}</Alert>)}
                     </p>
-
                     </a>
-                </Col>
+
+                </div>
     </>)
 }
 

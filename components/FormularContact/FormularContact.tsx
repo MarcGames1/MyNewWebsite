@@ -16,7 +16,7 @@ function FormularContact() {
       setValidated(true);
     };
   
-    return (<Alert variant={'secondary'}>
+    return (<Alert variant={'primary'}>
 
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-3">
@@ -77,7 +77,7 @@ function FormularContact() {
             feedback="Trebuie sa acceptati Termenii si Conditiile"
             />
         </Form.Group>
-        <Button type="submit">Submit form</Button>
+        <Button type="submit">Trimiteti</Button>
       </Form>
             </Alert>
     );
