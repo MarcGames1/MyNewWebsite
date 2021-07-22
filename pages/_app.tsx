@@ -8,15 +8,18 @@ import WhatsappSticky from '../components/Phone-only/stickyWhatsapp'
 
 function MyApp({ Component, pageProps }: AppProps) {
 ConsoleMessage()
-  return (<div id={'particles-js'}>
+  return (<>
+
     <head>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    />
 </head>
+  
   <Component {...pageProps} />  
+   
   <WhatsappSticky />
- </div> )
+ </> )
 }
 export default MyApp
