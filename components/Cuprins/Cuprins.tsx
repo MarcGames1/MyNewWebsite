@@ -11,13 +11,13 @@ function Cuprins (props: {
 
 
     
-    return(<>
-        <p className='text-primary text-center font-weight-bold text-uppercase'>Cuprins</p>
+    return(<div className='position-fixed' id="sticky-sidebar">
+    <br />
   <ListGroup>
-    {props.list.map((el, idx)=><ListGroup.Item active={props.active} action key={idx} variant="primary"> <a href={el.link}>{el.number} {el.name}</a></ListGroup.Item>)}
+    {props.list.map((el, idx)=><ListGroup.Item active={props.active} action key={idx} variant="primary"> <a className='text-capitalize' href ={el.link}>{el.number} {el.name}</a></ListGroup.Item>)}
   </ListGroup>
   
- </> )
+ </div> )
   }
   
 
