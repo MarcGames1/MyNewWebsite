@@ -11,7 +11,7 @@ function Cuprins (props: {
 
 
     
-    return(<div className='position-lg-fixed position-relative' id="sticky-sidebar">
+    return(<div className='sticky-lg-top position-md-relative' id="sticky-sidebar">
     <br />
   <ListGroup>
     {props.list.map((el, idx)=><ListGroup.Item active={props.active} action key={idx} variant="primary"> <a className='text-capitalize' href ={el.link}>{el.number} {el.name}</a></ListGroup.Item>)}
