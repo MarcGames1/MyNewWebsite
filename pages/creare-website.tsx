@@ -1,11 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap"
-import React, { useState } from "react"
+import React from "react"
 import CuprinsElement from "../Classes/CuprinsElement"
 import Cuprins from "../components/Cuprins/Cuprins"
 import MainNav from "../components/navbar/mainNav"
-import WebsiteSvg from "../components/SVG.components/websitesvg"
 import HeaderInFunctieDeCuprins from "../components/HeaderInFunctieDeCuprins/HeaderInFunctieDeCuprins"
 import FormularText from "../components/Formular+Text/Formular+Text"
+import MoodBoard from "../components/SVG.components/MoodBoard"
+import Wireframe from "../components/SVG.components/WireFrame"
+import Sketch from "../components/SVG.components/sketch"
+import Mockup from "../components/SVG.components/mockup"
+import DeCeForm from "../components/DECEsaLucreziCuMine/DeceSaLucreziCuMine+Form"
 
 
 
@@ -43,28 +47,75 @@ function Page() {
           <h2>Procesul de Creare a unui site web</h2>
 
 
-
+{/* Reprezentarea Vizuala A Websiteului */}
           <HeaderInFunctieDeCuprins {...cuprins[0]} />
+          <div className="d-flex justify-content-center">
+          <Sketch height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem rerum fugit, nostrum corrupti, esse perferendis eligendi optio quas odio fugiat autem ut repellat accusantium quaerat quis. Quo dolorum cumque in?</p>
+
+{/* MoodBoard */}
           <HeaderInFunctieDeCuprins {...cuprins[1]} />
+          <div className="d-flex justify-content-center">
+          <MoodBoard height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+
+{/* Wireframe */}
           <HeaderInFunctieDeCuprins {...cuprins[2]} />
+          <div className="d-flex justify-content-center">
+          <Wireframe height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+
+{/* Mockup */}
           <HeaderInFunctieDeCuprins {...cuprins[3]} />
+          <div className="d-flex justify-content-center">
+          <Mockup height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+         
+         
           <HeaderInFunctieDeCuprins {...cuprins[4]} />
+          <div className="d-flex justify-content-center">
+          <MoodBoard height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+
+
+
           <HeaderInFunctieDeCuprins {...cuprins[5]} />
+          <div className="d-flex justify-content-center">
+          <MoodBoard height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+
+          
           <HeaderInFunctieDeCuprins {...cuprins[6]} />
+          <div className="d-flex justify-content-center">
+          <MoodBoard height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+
+
           <HeaderInFunctieDeCuprins {...cuprins[7]} />
+           <div className="d-flex justify-content-center">
+          <MoodBoard height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+          
+          
           <HeaderInFunctieDeCuprins {...cuprins[8]} />
+          <div className="d-flex justify-content-center">
+          <MoodBoard height={150} />
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi iusto itaque harum facere. Sequi nostrum deleniti est. Tempore ipsum quos odit cumque? Corporis veritatis, laudantium eos fugit nisi iste?</p>
+          
+          
+          
           <HeaderInFunctieDeCuprins {...cuprins[9]} />
 
-          <FormularText text={beneficii} />
+         < DeCeForm />
 
         </article></Col>
         {/* <Col></Col> */}
