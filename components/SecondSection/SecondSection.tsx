@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Col, Row } from "react-bootstrap"
-import AdsSvg from "../SVG.components/ads"
+import AdsSvg from "../SVG.components/alteServici"
 import SeoSvg from "../SVG.components/seo"
 import WebdevSvg from "../SVG.components/webdev"
 import ServiceCard from "./ServiceCard"
@@ -36,7 +36,7 @@ const SecondSection = () => {
 
         <Container fluid>
             <Row id="serviceMainBlock">
-            <Col lg={4} md={12}> 
+            <Col className='pb-5' lg={4} md={12}> 
                 <ServiceCard class={developer.type}
                     title={developer.title}
                     description={developer.description}
