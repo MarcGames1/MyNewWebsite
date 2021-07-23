@@ -1,4 +1,4 @@
-import DeCEClass from "../../Classes/DECE"
+import DeCEClass from "../../Classes/CardContent/DECE"
 
 
 

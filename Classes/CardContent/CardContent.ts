@@ -1,6 +1,6 @@
 import { ReactChild } from "react";
 
-class DeCE{
+class CardContent{
     public title:string=''
     public text: string='';
     public SVG: ReactChild;
@@ -11,4 +11,4 @@ class DeCE{
      this.SVG = SVG
   }
   }
-  export default DeCE
+  export default CardContent

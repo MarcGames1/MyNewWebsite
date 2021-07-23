@@ -1,5 +1,4 @@
-import { Alert } from "react-bootstrap"
-import DeCEClass from "../../Classes/DECE"
+import DeCEClass from "../../Classes/CardContent/DECE"
 import CalitateSVG from "../SVG.components/Calitate"
 import CreativitateSVG from "../SVG.components/Creativitate"
 import EficientaSVG from "../SVG.components/Eficienta"
