@@ -26,9 +26,9 @@ const ServiceCard = (props: {
                         </div>
                     <h2> {props.title} </h2>
                     <p>
-                    {descrieri.map((text)=><Alert  variant='light' key={text}><Checkmark height={20} color={props.color}/>{text}</Alert>)}
+                    {descrieri.map((text)=><div  className='light' key={text}><Checkmark height={20} color={props.color}/>{text}</div>)}
                     </p>
-                    <Button variant='primary'>Afla mai multe detalii</Button>
+                    <Button className=' align-baseline' variant='primary'>Afla mai multe detalii</Button>
                     </a>
 
                 </div>

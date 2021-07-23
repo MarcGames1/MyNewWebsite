@@ -17,7 +17,7 @@ function FormularContact() {
     };
   
     return (<Alert variant={'primary'}>
-
+      <h6 className='h4 text-center'>Contact </h6>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-3">
           <Form.Group as={Col} md="6" controlId="validationCustom01">
@@ -28,10 +28,10 @@ function FormularContact() {
               placeholder="Nume"
               />
              
-            <Form.Control.Feedback><Checkmark color={'currentColor'} height={24} /></Form.Control.Feedback>
+            <Form.Control.Feedback></Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="6" controlId="validationCustom02">
-            <Form.Label>Last name</Form.Label>
+            <Form.Label>Prenume</Form.Label>
             <Form.Control
               required
               type="text"

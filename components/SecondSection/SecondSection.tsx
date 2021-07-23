@@ -27,8 +27,8 @@ const SecondSection = () => {
     }
 
     const developer =new Service('web', 'Web Developer', 'Creare website profesional ,Website facut dupa nevoile si viziunea afacerii tale','red','/creare-website')
-    const seo = new Service ('seo', 'SEO', 'Seo On Page,Seo Off Page','#00A0F0','/seo')
-    const ads = new Service ('ads', 'Google Ads', 'Optimizare Campanii Google Ads','#00EBAC','/google-ads')
+    const seo = new Service ('seo', 'SEO', 'Seo On Page,Seo Off Page,Plan Advertoriale SEO,Structura Articole pentru sectiunea de Blog','#00A0F0','/seo')
+    const ads = new Service ('ads', 'Alte Servicii', 'Conectare cu Google Search Console,Conectare cu Google Analitycs,Optimizare Campanii Google Ads','#00EBAC','/alte-servicii')
     
 
    
@@ -95,16 +95,17 @@ const SecondSection = () => {
     margin-bottom: 20px;
 }
 
+
 div#serviceMainBlock {
     text-align: center;
     margin: auto;
     display:flex;
-    margin-bottom:1rem;
+    
     }
 
 .ServiceBox {
-    float: left;
-    display: inline-block;
+    min-height:90vh;
+    display: flex;
     width: 100%;
 }
 

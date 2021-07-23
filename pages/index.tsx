@@ -17,8 +17,8 @@ export default function Home() {
     'Monitorizarea traficului si a comportamentului utilizatorilor prin Google Analitycs',
     'Stabilire si implementare obiective in Google Analitycs',
     'Conectare cu Google Search Console',
+  ]
     
-]
 
 
   return (
