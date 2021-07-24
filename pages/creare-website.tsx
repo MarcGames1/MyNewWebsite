@@ -41,7 +41,7 @@ function Page() {
   ]
 
   return (<>
-    <MainNav />
+    
     <Container fluid>
       <h1 className='text-center'>Creare Site Web</h1>
       <Row>
