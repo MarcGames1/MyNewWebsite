@@ -104,7 +104,7 @@ div#serviceMainBlock {
     display: flex;
     flex-direction:column;
     align-items:center;
-    margin:1em 0;
+    margin-bottom:1em;
     background: white;
     padding: 30px 10px;
 

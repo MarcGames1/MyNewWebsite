@@ -1,12 +1,11 @@
 html,
 body {
-  /* background-image: var(--background-image-main);
-  background-position:left 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: var(--background-image-main);
+  
+  background-size: contain;
   background-blend-mode:hard-light ;
   background-attachment: fixed;
-background-color:rgba(0, 0, 0, 0.863); */
+background-color:rgba(0, 0, 0, 0.863);
 
 
   padding: 0;
@@ -24,7 +23,7 @@ a {
   box-sizing: border-box;
 }
 :root{
---background-image-main: url(/img/background/bg.webp);
+--background-image-main: url(/img/background/background.png);
 }
 
  
