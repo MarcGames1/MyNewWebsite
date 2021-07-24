@@ -15,14 +15,14 @@ const FormularText = (props: { text: string[] })=>{
   
 <Container className='d-md-flex' fluid>
 
-<Col className=" d-block d-sm-block d-md-inline-block" lg={6} sm={12}  md={6}>
+<Col lg={{span:4, offset:1}} sm={{span:10, offset:1}}  md={{span:6, offset:0}}>
 
           {props.text.map((text)=><Alert  variant='info' key={text}><Checkmark height={20} color={'green'}/>{text}</Alert>)}
          
 </Col>
-  
+ 
    
-<Col lg={6} sm={12}  md={6}>
+<Col   lg={{span:4, offset:2}} sm={{span:10, offset:1}}  md={{span:5, offset:1}}>
     <FormularContact  />
 </Col>
 </Container>
