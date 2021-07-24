@@ -36,7 +36,7 @@ const SecondSection = () => {
 
         <Container fluid>
             <Row id="serviceMainBlock">
-            <Col className='pb-5' lg={4} md={12}> 
+            <Col lg={4} md={12}> 
                 <ServiceCard class={developer.type}
                     title={developer.title}
                     description={developer.description}
@@ -76,13 +76,7 @@ const SecondSection = () => {
 
         <style global jsx>
             {`
-            div#services {
-    background: #f7f6f6;
-    text-align: center;
-  
-    padding: 25px;
-    overflow: hidden;
-}
+       
 .ServiceInner h2 {
     font-size: 35px;
     color: #000000;
@@ -93,6 +87,7 @@ const SecondSection = () => {
     padding: 20px;
     color: #313d4a;
     margin-bottom: 20px;
+    
 }
 
 
@@ -105,8 +100,15 @@ div#serviceMainBlock {
 
 .ServiceBox {
     min-height:90vh;
-    display: flex;
     width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin:1em 0;
+    background: white;
+    padding: 30px 10px;
+
+    
 }
 
 
@@ -115,9 +117,10 @@ div#serviceMainBlock {
     padding: 30px 10px;
 }
 
-.ServiceBox.web p {
+.ServiceBox  p {
     font-size: 20px;
     padding: 41px;
+    text-align: left;
 }
 
 .ServiceBox.web h2 {
@@ -127,44 +130,28 @@ div#serviceMainBlock {
 /* seo */
 
 
-.ServiceBox.seo {
-    background: white;
-    padding: 30px 10px;
-}
-
-.ServiceBox.seo p {
-    font-size: 20px;
-    padding: 41px;
-}
-
 .ServiceBox.seo h2 {
     color: #00A0F0;
 }
 
+
+
+
+
 /* ads */
 
-
-.ServiceBox.ads {
-    background: white;
-    padding: 30px 10px;
-}
-
-.ServiceBox.ads p {
-    font-size: 20px;
-    padding: 41px;
-}
 
 .ServiceBox.ads h2 {
     color: #00EBAC;
 }
+
+
 .ServiceBox {
     box-shadow: 4px 4px 20px #afafaf;
     transition-duration: 0.6s;
 }
 
-.fa {
-    font-size: 25px;
-}
+
 
 .ServiceBox.web:hover{
     box-shadow: -3px 3px 15px #FF3A46;
@@ -180,9 +167,7 @@ div#serviceMainBlock {
     cursor: pointer;
 }
 
-.ServiceBox p {
-    color: #3a3939;
-}
+
             `}
         </style>
     </>)
