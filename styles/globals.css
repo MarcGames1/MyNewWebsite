@@ -2,10 +2,12 @@ html,
 body {
   background-image: var(--background-image-main);
   
-  background-size: contain;
-  background-blend-mode:hard-light ;
+  background-size: cover;
+  background-blend-mode:soft-light ;
   background-attachment: fixed;
-background-color:rgba(0, 0, 0, 0.863);
+background-color:rgba(255, 255, 255, 0.74);
+background-repeat: no-repeat;
+background-position: center;
 
 
   padding: 0;
@@ -23,7 +25,7 @@ a {
   box-sizing: border-box;
 }
 :root{
---background-image-main: url(/img/background/background.png);
+--background-image-main: url(/img/background/background3.jpg);
 }
 
  
