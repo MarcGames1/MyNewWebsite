@@ -99,6 +99,7 @@ div#serviceMainBlock {
     }
 
 .ServiceBox {
+    z-index:2;
     min-height:90vh;
     width: 100%;
     display: flex;
@@ -107,9 +108,11 @@ div#serviceMainBlock {
     margin-bottom:1em;
     background: white;
     padding: 30px 10px;
-
-    
 }
+.col-lg-4{
+    z-index: 2;
+}
+    
 
 
 .ServiceBox.web {
