@@ -1,0 +1,10 @@
+.hero{
+    max-height:100vh;
+    display:block;
+    position: relative;
+}
+
+.hero_img{
+    position:relative;
+    display: block;
+}
