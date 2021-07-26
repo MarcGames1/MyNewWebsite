@@ -2,7 +2,7 @@ import React from "react";
 
 function Wireframe (props: {
     
-    height: number | undefined;
+    height: number
    } ) {
 
     const pixelHeigth = props.height+ 'px'
