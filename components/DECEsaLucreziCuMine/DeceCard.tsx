@@ -8,11 +8,25 @@ const DeceCard=(props: DeCEClass)=>{
     <div className='deceCard'>
     
     <h5 className='text-center'>{props.title}</h5>
-   <div  className='text-center' >{props.SVG}</div> 
-        <p className='m-2'>{props.text}</p>
+   <div><div>{props.SVG}</div>  <p className='text-justify'>{props.text}</p></div> 
+       
     </div>
 
     <style jsx>{`
+        .deceCard{
+            margin:0em 1em 1em 1em;
+        }
+            .deceCard div{
+                display:flex;
+                flex-flow:row nowrap;
+                justify-items:center;
+                align-items:center
+            }
+
+            .deceCard div p{
+                padding:1em;
+            }
+
         .deceCard{
             margin-right:1rem;
             background-color:white;
