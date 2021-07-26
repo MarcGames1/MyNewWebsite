@@ -13,3 +13,6 @@ class CuprinsElement{
   }
   }
   export default CuprinsElement
+
+
+  

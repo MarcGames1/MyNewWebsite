@@ -27,7 +27,7 @@ const SecondSection = () => {
     }
 
     const developer =new Service('web', 'Web Developer', 'Creare website profesional ,Website facut dupa nevoile si viziunea afacerii tale','red','/creare-website')
-    const seo = new Service ('seo', 'SEO', 'Seo On Page,Seo Off Page,Plan Advertoriale SEO,Structura Articole pentru sectiunea de Blog','#00A0F0','/seo')
+    const seo = new Service ('seo', 'SEO', 'Seo On Page,Seo Off Page,Plan Advertoriale SEO,Structura Articole pentru sectiunea de Blog','#00A0F0','/optimizare-seo')
     const ads = new Service ('ads', 'Alte Servicii', 'Conectare cu Google Search Console,Conectare cu Google Analitycs,Optimizare Campanii Google Ads','#00EBAC','/alte-servicii')
     
 

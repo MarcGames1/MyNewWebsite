@@ -20,7 +20,7 @@ const MainNav = () =>{
       <Nav.Link href="/despre">Despre Mine</Nav.Link>
       <NavDropdown title="Servicii" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/creare-website">Creare Site De Prezentare</NavDropdown.Item>
-        <NavDropdown.Item href="/seo">SEO</NavDropdown.Item>
+        <NavDropdown.Item href="/optimizare-seo">Optimizare Seo</NavDropdown.Item>
         <NavDropdown.Item href="/alte-servicii">Vezi Mai Multe Servicii</NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="/portofoliu">Portofoliu</Nav.Link>
