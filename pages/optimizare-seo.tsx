@@ -39,7 +39,7 @@ function SeoPage(){
         <Col lg={6} md={12}>
         <FlipCard 
 front = {{
-    img:"/img/seo/seo.jpg",
+    img:"/img/seo/audit-seo.jpg",
     altImg:'Audit seo on page',
 }}
 back ={{
@@ -69,7 +69,7 @@ title={'Audit seo on page '}
         
         <FlipCard 
 front = {{
-    img:"/img/seo/seo.jpg",
+    img:"/img/seo/audit-performanta.jpg",
     altImg:'alt',
 }}
 back ={{
@@ -89,7 +89,7 @@ title={'Audit de performanță al paginii web'}
         
         <FlipCard 
 front = {{
-    img:"/img/seo/seo.jpg",
+    img:"/img/seo/blog.jpg",
     altImg:'alt',
 }}
 back ={{

@@ -33,9 +33,9 @@ function FlipCard (props: {
     return(<>
 
 <ReactCardFlip isFlipped={isflipped}>
-<Card className='flipCard' onClick={flipCard}>
-  <Card.Img  src={props.front.img} alt={props.front.altImg} />
-  <Card.ImgOverlay className='d-flex flex-column align-content-center justify-content-between'>
+<Card className=' flipCard' onClick={flipCard}>
+  <Card.Img src={props.front.img} alt={props.front.altImg} />
+  <Card.ImgOverlay className='front-overlay d-flex flex-column align-content-center justify-content-between'>
 
     <Card.Title className='text-center bg-secondary-transparent fw-bolder'>{props.title}</Card.Title>
    
@@ -79,9 +79,29 @@ function FlipCard (props: {
         transition-duration:.5s;
 
         transition-timing-function:ease-in;
+    }
+
+    .front-overlay{
+        transition: all 1s ease-in;
+        background-color:rgba(0,0,0,0.4);
+        overflow:hidden;
         
+     
+    }
+    .front-overlay:hover{
+        background-color:rgba(0,0,0,0.0);
 
     }
+    .front-overlay > button{
+        display:none !important;
+    }
+   
+
+    .front-overlay:hover > button{
+        display:block !important;
+    }
+  
+
 
     .flipCard:hover{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
