@@ -24,9 +24,7 @@ function SeoPage(){
     {/* <Col lg={3}><Cuprins active={false} list={cuprins} /></Col> */}
     <Col><article>
 
-    <Col  lg={{span:6, offset:3}}>
-    <Image  src='/img/seo/seo.jpg' height={300} width={600} layout='responsive'/>
-    </Col>
+ 
     <Alert variant={'success'}><span className='fw-bold'>Optimizarea SEO</span> a site-ului îți aduce avantajul de a crește crește vizibilitatea online a afacerii tale și te poziționează ca <span className='fw-bold'>ca expert pe nișa ta</span> În plus, reduce costul cu reclamele plătite; practic, rolul seo este să demareze procesul de vânzare, cât și vânzarea propriu-zisă, direct din articolele de blog. 
         <hr />
     <span className='text-center d-block fw-bold'>Pachetul de servicii și consultanță SEO cuprinde:</span>
@@ -149,7 +147,7 @@ title={'Plan personalizat de advertoriale SEO'}
     <style global jsx>
         {`
         .react-card-back{
-           
+           overflow:hidden;
             background-color:#fff;
         }
         .react-card-back , .react-card-front, .front-overlay,.card-img-overlay, .back-overlay{

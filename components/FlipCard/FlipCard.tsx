@@ -39,7 +39,7 @@ function FlipCard (props: {
 
     <Card.Title className='text-center bg-secondary-transparent fw-bolder'>{props.title}</Card.Title>
    
-    <Button className='d-block'  variant="primary" onClick={flipCard}>Cititi mai mult</Button>
+    
     </Card.ImgOverlay>
 
 </Card>
@@ -50,7 +50,7 @@ function FlipCard (props: {
     <Card.Text>
       {props.back.body} 
     </Card.Text>
-    <Button className='d-block'  variant="primary" onClick={flipCard}>Reveniti</Button>
+   
   </Card.Body>
 </div>
 </ReactCardFlip>
