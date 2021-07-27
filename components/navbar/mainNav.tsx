@@ -1,11 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 import {Container, Navbar, Nav, NavDropdown } from "react-bootstrap"
 import SocialMedia from "../Social-Media/SocialMedia"
 
 
 
-const MainNav = () =>{
+function MainNav() {
 
+  const [show, setShow] = useState(false);
+  const showDropdown = ()=>{
+      setShow(!show);
+  }
+  const hideDropdown = () => {
+      setShow(false);
+  }
 
 
   return(<>
@@ -18,7 +25,13 @@ const MainNav = () =>{
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
       <Nav.Link href="/despre">Despre Mine</Nav.Link>
-      <NavDropdown title="Servicii" id="collasible-nav-dropdown">
+      <NavDropdown
+       title="Servicii"
+       id="collasible-nav-dropdown"
+       show={show}
+       onMouseEnter={showDropdown} 
+       onMouseLeave={hideDropdown}
+       >
         <NavDropdown.Item href="/creare-website">Creare Site De Prezentare</NavDropdown.Item>
         <NavDropdown.Item href="/optimizare-seo">Optimizare Seo</NavDropdown.Item>
         <NavDropdown.Item href="/alte-servicii">Vezi Mai Multe Servicii</NavDropdown.Item>

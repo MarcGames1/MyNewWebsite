@@ -1,60 +1,160 @@
-import { Container, Row, Col } from 'react-bootstrap'
+import React from 'react'
+import { Container, Row, Col, ListGroup, ListGroupItem, Alert } from 'react-bootstrap'
 import Image from 'next/image'
 import HeaderInFunctieDeCuprins from '../components/HeaderInFunctieDeCuprins/HeaderInFunctieDeCuprins'
 import CuprinsElement from '../Classes/CuprinsElement'
-import React from 'react'
-import Cuprins from '../components/Cuprins/Cuprins'
-
-const SeoPage=()=>{
+import FlipCard from '../components/FlipCard/FlipCard';
+import Checkmark from '../components/SVG.components/checkmark';
 
 
-    let cuprinss = [
 
-        new CuprinsElement('1', 'Reprezentarea vizuala a websiteului', '#1', 'paragrafe[0]'),
-        new CuprinsElement('2', 'Pregatirea resurselor pentru web', '#2', 'paragrafe[1]'),
-        new CuprinsElement('3', 'Dezvoltarea efectiva a website-ului', '#3', 'paragrafe[2]'),
-        new CuprinsElement('3.1', 'Testare', '#3.1', 'paragrafe[3]'),
-        new CuprinsElement('3.2', 'Debug', '#3.2', 'paragrafe[4]'),
-        new CuprinsElement('3.3', 'Optimizare', '#3.3', 'paragrafe[5]'),
-        new CuprinsElement('3.4','Mentenanta si Administrare','#3.4', 'paragrafe[6]'),
-        new CuprinsElement('4', 'De ce sa lucrezi cu mine', '#4', ''),
-      ]
-    
+function SeoPage(){
 
-    let cuprins =[
-       new CuprinsElement( '1','Audit seo on page', '#1', ''),
-       new CuprinsElement( '1.1',' Generarea rapoartelor de cuvinte cheie pentru fiecare pagina a site-ului', '#1.1', ''),
-       new CuprinsElement( '2','Audit de performanță al paginii web', '#2', 'astfel încât acesta să fie cât mai vizibil. Site-urile create de mine au parametri optimi de viteză, astfel încât motorul de căutare Google nu va penaliza site-ul pentru timpul de încărcare.'),
-       new CuprinsElement( '3','Plan de conținut și structură pentru articole de blog', '#3', 'Backlinks și advertoriale Seo'),
-       new CuprinsElement('5','Plan de Advertoriale SEO','#5','Planul de advertoriale SEO este cel care menține site-ul pe prima pagină a căutării Google, asigurandu-se așadar o vizibilitate maximă a brandului. Este necesar ca advertorialele să fie publicate constant, pentru a putea urca și rămâne în primele rezultate pe Google.')
-    ]
+
+
+
 
     // De facut Iconite Vectori cu Cartonase care arata textul la hover? sau ceva de genul
 
     return(<>
-    <Container fluid>
+    <Container>
 
     <h1 className='text-center'>Optimizare Seo</h1>
-    <Row>
+    
     {/* <Col lg={3}><Cuprins active={false} list={cuprins} /></Col> */}
     <Col><article>
 
     <Col  lg={{span:6, offset:3}}>
     <Image  src='/img/seo/seo.jpg' height={300} width={600} layout='responsive'/>
     </Col>
-    <p>Optimizarea SEO a site-ului îți aduce avantajul de a crește crește vizibilitatea online a afacerii tale și te poziționează ca expert pe nișa ta. În plus, reduce costul cu reclamele plătite; practic, rolul seo este să demareze procesul de vânzare, cât și vânzarea propriu-zisă, direct din articolele de blog. 
+    <Alert variant={'success'}><span className='fw-bold'>Optimizarea SEO</span> a site-ului îți aduce avantajul de a crește crește vizibilitatea online a afacerii tale și te poziționează ca <span className='fw-bold'>ca expert pe nișa ta</span> În plus, reduce costul cu reclamele plătite; practic, rolul seo este să demareze procesul de vânzare, cât și vânzarea propriu-zisă, direct din articolele de blog. 
+        <hr />
+    <span className='text-center d-block fw-bold'>Pachetul de servicii și consultanță SEO cuprinde:</span>
+</Alert>
 
-Pachetul de servicii și consultanță SEO cuprinde:
+<Container>
+    <Row>
+
+        {/* Coloana 1 stanga sus */}
+        <Col lg={6} md={12}>
+        <FlipCard 
+front = {{
+    img:"/img/seo/seo.jpg",
+    altImg:'Audit seo on page',
+}}
+back ={{
+    body:<> <p> Generarea rapoartelor de cuvinte cheie pentru fiecare pagina a site-ului</p>
+    <ListGroup>
+    <ListGroupItem>Recomandări structura Url</ListGroupItem>
+    <ListGroupItem>Meta-titlu, meta-descriere si elemente heading</ListGroupItem>
+    </ListGroup>
+    </>
+}}
+title={'Audit seo on page '}
+/>
+
+    
+   
+   
+    
+
+
+
+        </Col>
+
+
+
+  {/* Coloana 2 Dreapta sus */}
+  <Col lg={6} md={12}>
+        
+        <FlipCard 
+front = {{
+    img:"/img/seo/seo.jpg",
+    altImg:'alt',
+}}
+back ={{
+    body:<> <p> <Checkmark height={30} color={'green'} /> Auditul de performanță al paginii web vine însoțit și recomandări pentru optimizarea site-ului, astfel încât după aplicarea lor, acesta să fie cât mai vizibil. </p>
+    <p><Checkmark height={30} color={'green'} /> Site-urile create de mine au parametri optimi de viteză, astfel încât motorul de căutare Google nu va penaliza site-ul pentru timpul de încărcare.
+    </p></>
+}}
+title={'Audit de performanță al paginii web'}
+/>
+
+        </Col>
+    </Row>
+    <Row>
+
+  {/* Coloana 3 stanga jos */}
+        <Col lg={6} md={12}>
+        
+        <FlipCard 
+front = {{
+    img:"/img/seo/seo.jpg",
+    altImg:'alt',
+}}
+back ={{
+    body: <>  <ListGroup variant="flush">
+    <ListGroup.Item>Cras justo odio</ListGroup.Item>
+    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+  </ListGroup> </>
+}}
+title={'Plan de conținut și structură pentru articole de blog'}
+/>
+
+        </Col>
+
+ {/* Coloana 4 dreapta jos */}
+        <Col lg={6} md={12}>
+        
+        <FlipCard 
+front = {{
+    img:"/img/seo/seo.jpg",
+    altImg:'alt',
+}}
+back ={{
+    body: <>  <Alert variant="flush">
+    <Alert.Heading>Cu ce te ajută advertorialul SEO?</Alert.Heading>
+    <ListGroup.Item>Să urci și să te menții pe termen lung în prima pagină de căutări a Google.</ListGroup.Item>
+    <ListGroup.Item>Să conturezi o imagine profesională a brandului tău pentru utilizatori.</ListGroup.Item>
+    <hr />
+    <Alert.Heading>Cum te penalizează Google dacă nu îi respecți politica?</Alert.Heading>
+    <p>Consultanță profesională SEO (cât și cunoașterea algoritmilor Google), pe care o asigur, reprezintă garanția că site-ul tău va fi ferit de eventuale penalizări din partea Google. 
 </p>
-<HeaderInFunctieDeCuprins {...cuprins[0]}/>
-<HeaderInFunctieDeCuprins {...cuprins[1]}/>
-<HeaderInFunctieDeCuprins {...cuprins[2]}/>
-<p><span>Recomandări pentru optimizarea site-ului</span> {cuprins[2].text}</p>
-<HeaderInFunctieDeCuprins {...cuprins[3]}/>
+  </Alert>   </>
+}}
+
+title={'Plan personalizat de advertoriale SEO'}
+
+    
+   
+
+/>
+        
+        </Col>
+    </Row>
+</Container>
+
+
 
     </article></Col>
-    </Row>
+    
     </Container>
+
+
+
+
+
+
+    <style global jsx>
+        {`
+        .react-card-back{
+            overflow:scroll;
+            background-color:#fff;
+        }
+        
+        `}
+    </style>
     </>)
 }
 
