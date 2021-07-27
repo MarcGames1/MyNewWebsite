@@ -69,7 +69,7 @@ title={'Audit seo on page '}
         
         <FlipCard 
 front = {{
-    img:"/img/seo/audit-performanta.jpg",
+    img:"/img/seo/audit-performanta.png",
     altImg:'alt',
 }}
 back ={{
@@ -109,7 +109,7 @@ title={'Plan de conținut și structură pentru articole de blog'}
         
         <FlipCard 
 front = {{
-    img:"/img/seo/seo.jpg",
+    img:"/img/seo/advertorial.jpg",
     altImg:'alt',
 }}
 back ={{
@@ -149,8 +149,12 @@ title={'Plan personalizat de advertoriale SEO'}
     <style global jsx>
         {`
         .react-card-back{
-            overflow:scroll;
+           
             background-color:#fff;
+        }
+        .react-card-back , .react-card-front, .front-overlay,.card-img-overlay, .back-overlay{
+            min-height:49vh;
+            max-height:50vh;
         }
         
         `}
