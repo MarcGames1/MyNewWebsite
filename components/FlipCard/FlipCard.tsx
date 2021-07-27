@@ -66,7 +66,7 @@ function FlipCard (props: {
         
     }
     .card, .card-img{
-        max-height:50vh;
+        height:50vh;
         background-position:fixed;
     }
     .flipCard{
