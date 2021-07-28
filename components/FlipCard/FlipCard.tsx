@@ -1,5 +1,5 @@
-import React, {ReactChild, ReactComponentElement, ReactNode, useState} from "react"
-import { Button, Card, Alert } from "react-bootstrap"
+import React, {ReactNode, useState} from "react"
+import { Card } from "react-bootstrap"
 import ReactCardFlip from "react-card-flip"
 
 
@@ -32,8 +32,8 @@ function FlipCard (props: {
 
     return(<>
 
-<ReactCardFlip isFlipped={isflipped}>
-<Card className=' flipCard' onClick={flipCard}>
+<div>
+<Card className=' flipCard'>
   <Card.Img src={props.front.img} alt={props.front.altImg} />
   <Card.ImgOverlay className='front-overlay d-flex flex-column align-content-center justify-content-between'>
 
@@ -53,7 +53,7 @@ function FlipCard (props: {
    
   </Card.Body>
 </div>
-</ReactCardFlip>
+</div>
 
 <style global jsx>{` 
 
@@ -61,7 +61,7 @@ function FlipCard (props: {
         background-color:#ffff;
     }
     .back{
-        height:50vh;
+        
         overflow:scroll;
         
     }
@@ -106,6 +106,11 @@ function FlipCard (props: {
     .flipCard:hover{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
+
+    {/* Landscape */}
+
+
     `}</style>
     </>)
 }
