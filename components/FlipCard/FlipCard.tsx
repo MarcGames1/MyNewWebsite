@@ -62,7 +62,7 @@ function FlipCard (props: {
     }
     .back{
         
-        overflow:scroll;
+        
         
     }
     .card, .card-img{

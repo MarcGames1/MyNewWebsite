@@ -116,9 +116,9 @@ back ={{
     <ListGroup.Item variant='primary'><Checkmark height={20} color={'green'} />Să urci și să te menții pe termen lung în prima pagină de căutări a Google.</ListGroup.Item>
     <ListGroup.Item variant='primary'><Checkmark height={20} color={'green'} /> Să conturezi o imagine profesională a brandului tău pentru utilizatori.</ListGroup.Item>
     <hr />
-    <Alert.Heading className='text-center'>Cum te <span className='text-danger'>penalizează</span> Google dacă nu îi respecți politica?</Alert.Heading>
-    <p>Consultanță profesională SEO (cât și cunoașterea algoritmilor Google), pe care o asigur, reprezintă garanția că site-ul tău va fi ferit de eventuale penalizări din partea Google. 
-</p>
+    <Alert.Heading className='text-center'>‼️ Atentie! Google te <span className='text-danger'>penalizează</span> Google dacă nu îi respecți politica</Alert.Heading>
+    <Alert variant='primary'><Checkmark height={20} color={'green'} /> Consultanță profesională SEO (cât și cunoașterea algoritmilor Google), pe care o asigur, reprezintă garanția că site-ul tău va fi ferit de eventuale penalizări din partea Google. 
+</Alert>
   </Alert>   </>
 }}
 
@@ -147,7 +147,7 @@ title={'Plan personalizat de advertoriale SEO'}
     <style global jsx>
         {`
         .react-card-back{
-           overflow:hidden;
+           
             background-color:#fff;
         }
         .react-card-back , .react-card-front, .front-overlay,.card-img-overlay, .back-overlay{
