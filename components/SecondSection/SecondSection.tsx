@@ -1,9 +1,11 @@
 import React from "react"
-import { Container, Col, Row } from "react-bootstrap"
+import { Container, CardGroup ,  Col, Row, Card, Button } from "react-bootstrap"
 import AdsSvg from "../SVG.components/alteServici"
+import Checkmark from "../SVG.components/checkmark"
 import SeoSvg from "../SVG.components/seo"
 import WebdevSvg from "../SVG.components/webdev"
 import ServiceCard from "./ServiceCard"
+import Link from 'next/link'
 
 
 
@@ -35,42 +37,34 @@ const SecondSection = () => {
     return (<>
 
         <Container fluid>
-            <Row id="serviceMainBlock">
-            <Col lg={4} md={12}> 
-                <ServiceCard class={developer.type}
-                    title={developer.title}
-                    description={developer.description}
-                    href = {developer.href}
-                    color={developer.color}
-                ><WebdevSvg height={48} color={developer.color}/>
-                </ServiceCard>
-</Col>
-                <Col lg={4} md={12}> 
-               <ServiceCard 
-               
-                class= {seo.type}
-                title = {seo.title}
-                description = {seo.description}
-                href = {seo.href}
-                color={seo.color}
-            >
-                <SeoSvg height={48} color={seo.color} />
-                </ServiceCard>
-</Col>
-                <Col lg={4} md={12}> 
-                <ServiceCard 
-               
-               class= {ads.type}
-               title = {ads.title}
-               description = {ads.description}
-               href = {ads.href}
-               color={ads.color}
-               >
-               <AdsSvg height={48} color={ads.color} />
-               </ServiceCard>
-            </Col>
-
-            </Row>
+            <CardGroup className='m-2 gap-4' id="serviceMainBlock">
+                <Link href={developer.href}>
+            <Card className={'ServiceBox '+developer.type}> 
+            <WebdevSvg height={48} color={developer.color}/>
+            <Card.Body>
+                <Card.Title className='text-center'>{developer.title}</Card.Title>
+                <Card.Text>{developer.description.split(',').map((text)=><div  className='light' key={text}><Checkmark height={20} color={developer.color}/> {text}</div>)}</Card.Text>
+                <Button href={developer.href} className=' align-self-end' variant='primary'>Afla mai multe detalii</Button>  
+            </Card.Body>
+</Card>
+                </Link>
+<Card className={'ServiceBox '+seo.type}> 
+            <WebdevSvg height={48} color={seo.color}/>
+            <Card.Body>
+                <Card.Title className='text-center'>{seo.title}</Card.Title>
+                <Card.Text>{seo.description.split(',').map((text)=><div  className='light' key={text}><Checkmark height={20} color={seo.color}/> {text}</div>)}</Card.Text>
+                <Button href={seo.href} className=' align-self-end' variant='primary'>Afla mai multe detalii</Button>  
+            </Card.Body>
+</Card>
+<Card className={'ServiceBox '+ads.type}> 
+            <WebdevSvg height={48} color={ads.color}/>
+            <Card.Body>
+                <Card.Title className='text-center'>{ads.title}</Card.Title>
+                <Card.Text>{ads.description.split(',').map((text)=><div  className='light' key={text}><Checkmark height={20} color={ads.color}/> {text}</div>)}</Card.Text>
+                <Button className='align-self-end' href={ads.href}  variant='primary'>Afla mai multe detalii</Button>  
+            </Card.Body>
+</Card>
+            </CardGroup>
 
         </Container>
 
@@ -83,49 +77,14 @@ const SecondSection = () => {
 }
 
 
-
-
-div #serviceMainBlock {
-    text-align: center;
-    margin: auto;
-    display:flex;
-    
-    }
-
-.ServiceBox {
-    z-index:2;
-    min-height:83vh;
-    width: 100%;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    margin-bottom:1em;
-    background: white;
-    padding: 30px 10px;
-    
-}
-.col-lg-4{
-    z-index: 2;
-}
-    
-
-
-
-
-.ServiceBox  div div {
-    font-size: 20px;
-    padding: 1rem 1.2rem;
-    text-align: left;
-}
-
-.ServiceBox.web h2 {
+.web div .h5 {
     color: #ff3a46;
 }
 
 /* seo */
 
 
-.ServiceBox.seo h2 {
+.seo div .h5 {
     color: #00A0F0;
 }
 
@@ -136,7 +95,7 @@ div #serviceMainBlock {
 /* ads */
 
 
-.ServiceBox.ads h2 {
+.ads  div .h5 {
     color: #00EBAC;
 }
 
