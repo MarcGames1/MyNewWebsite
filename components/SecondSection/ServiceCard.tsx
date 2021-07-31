@@ -13,22 +13,22 @@ const ServiceCard = (props: {
 }) =>{
 
 
-    const classVariant ='ServiceBox web '+ props.class
+    const classVariant: string ='ServiceBox ' + props.class
 
     const descrieri = props.description.split(',')
 
     return (<>
     
-    <div className={classVariant}>
+    <div className={ ' ' +  classVariant}>
                     <a href={props.href}>
                     <div className="fa fa-code" aria-hidden="true">
                         {props.children}
-                        </div>
+                    </div>
                     <h2> {props.title} </h2>
-                    <p>
-                    {descrieri.map((text)=><div  className='light' key={text}><Checkmark height={20} color={props.color}/>{text}</div>)}
-                    </p>
-                    <Button className=' align-baseline' variant='primary'>Afla mai multe detalii</Button>
+                    <div className='d-flex row justify-content-between text-start'>
+                    {descrieri.map((text)=><div  className='light' key={text}><Checkmark height={20} color={props.color}/> {text}</div>)}
+                    </div>
+                    <Button className=' align-self-end' variant='primary'>Afla mai multe detalii</Button>
                     </a>
 
                 </div>

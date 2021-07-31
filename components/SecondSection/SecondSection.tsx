@@ -91,7 +91,7 @@ const SecondSection = () => {
 }
 
 
-div#serviceMainBlock {
+div #serviceMainBlock {
     text-align: center;
     margin: auto;
     display:flex;
@@ -108,6 +108,7 @@ div#serviceMainBlock {
     margin-bottom:1em;
     background: white;
     padding: 30px 10px;
+    
 }
 .col-lg-4{
     z-index: 2;

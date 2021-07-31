@@ -1,6 +1,6 @@
 import React from "react"
 import { Container ,Col } from "react-bootstrap"
-import FormularContact from "../FormularContact/FormularContact"
+import FormularContact from "../FormularContact/FormularContact.jsx"
 import DeCE from "./DeCE"
 
 

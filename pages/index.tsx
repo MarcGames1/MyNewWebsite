@@ -15,7 +15,7 @@ export default function Home() {
     'Optimizare Seo',
     'Seo on page',
     'Plan dedicat lunar pentru ca tu sa urci printre primele rezultate de cautare Google in cel mai scurt timp',
-    'Monitorizarea traficului si a comportamentului utilizatorilor prin Google Analitycs',
+    'Monitorizarea traficului si a comportamentului utilizatorilor prin Google Analytics',
     'Stabilire si implementare obiective in Google Analitycs',
     'Conectare cu Google Search Console',
   ]

@@ -25,16 +25,17 @@ function SeoPage(){
     <Col><article>
 
  
-    <Alert variant={'success'}><span className='fw-bold'>Optimizarea SEO</span> a site-ului îți aduce avantajul de a crește crește vizibilitatea online a afacerii tale și te poziționează ca <span className='fw-bold'>ca expert pe nișa ta</span> În plus, reduce costul cu reclamele plătite; practic, rolul seo este să demareze procesul de vânzare, cât și vânzarea propriu-zisă, direct din articolele de blog. 
-        <hr />
-    <span className='text-center d-block fw-bold'>Pachetul de servicii și consultanță SEO cuprinde:</span>
-</Alert>
+   
 
 <Container>
     <Row>
 
         {/* Coloana 1 stanga sus */}
         <Col lg={{offset:3, span:7}}>
+        <Alert variant={'success'}><span className='fw-bold'>Optimizarea SEO</span> a site-ului îți aduce avantajul de a crește crește vizibilitatea online a afacerii tale și te poziționează ca <span className='fw-bold'>ca expert pe nișa ta</span> În plus, reduce costul cu reclamele plătite; practic, rolul seo este să demareze procesul de vânzare, cât și vânzarea propriu-zisă, direct din articolele de blog. 
+        <hr />
+    <span className='text-center d-block fw-bold'>Pachetul de servicii și consultanță SEO cuprinde:</span>
+</Alert>
         <FlipCard 
 front = {{
     img:"/img/seo/audit-seo.jpg",

@@ -1,6 +1,6 @@
 import React from "react"
 import { Container ,Alert, Col, Row, ListGroup } from "react-bootstrap"
-import FormularContact from "../FormularContact/FormularContact"
+import FormularContact from "../FormularContact/FormularContact.jsx"
 import Checkmark from "../SVG.components/checkmark"
 import LaptopContainer from "./laptop"
 
