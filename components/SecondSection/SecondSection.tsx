@@ -82,13 +82,7 @@ const SecondSection = () => {
     color: #000000;
 }
 
-.ServiceInner p {
-    font-size: 25px;
-    padding: 20px;
-    color: #313d4a;
-    margin-bottom: 20px;
-    
-}
+
 
 
 div #serviceMainBlock {
@@ -100,7 +94,7 @@ div #serviceMainBlock {
 
 .ServiceBox {
     z-index:2;
-    min-height:90vh;
+    min-height:83vh;
     width: 100%;
     display: flex;
     flex-direction:column;
@@ -116,14 +110,11 @@ div #serviceMainBlock {
     
 
 
-.ServiceBox.web {
-    background: white;
-    padding: 30px 10px;
-}
 
-.ServiceBox  p {
+
+.ServiceBox  div div {
     font-size: 20px;
-    padding: 41px;
+    padding: 1rem 1.2rem;
     text-align: left;
 }
 
