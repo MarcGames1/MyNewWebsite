@@ -1,5 +1,6 @@
 import React from "react"
-import { Image, Container, Col, Row } from "react-bootstrap"
+import { Container, Col, Row } from "react-bootstrap"
+import Image from 'next/image'
 import Text from "../components/Despre Mine/Text"
 import styles from '../styles/Despre.module.css'
 const Despre = () =>{
@@ -7,7 +8,12 @@ const Despre = () =>{
     return(<Container fluid>
         <Row className='d-flex align-content-center justify-content-center'>
     <Col md={6}>
-    <Image className={styles.img} src="img/despre/Eu.jpg"  thumbnail />
+    <div className= 'd-flex align-items-center justify-items-center'>
+        <div className=' mx-auto my-auto img-thumbnail'>
+        <Image className={styles.img} src="/img/despre/Eu.jpg" width={500} height={500} layout='intrinsic'  />
+        </div>
+
+    </div>
     </Col>
     <Col md={6}>
         <Text />
