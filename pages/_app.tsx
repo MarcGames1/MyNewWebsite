@@ -21,6 +21,7 @@ ConsoleMessage()
   <MainNav />
   <Component {...pageProps} />  
   <WhatsappSticky />
+  <Footer />
    
  
 

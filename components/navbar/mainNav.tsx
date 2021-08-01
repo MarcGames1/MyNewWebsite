@@ -39,9 +39,9 @@ function MainNav() {
       <Nav.Link href="/portofoliu">Portofoliu</Nav.Link>
       <Nav.Link href='/tutoriale'>Tutoriale</Nav.Link>
       <Nav.Link href="/blog">Blog</Nav.Link>
-      <Nav.Link href="/contact">Contact</Nav.Link>
-      
     </Nav>
+      
+      
     
     <SocialMedia col_md={3} />
     
