@@ -1,5 +1,5 @@
 import React from "react"
-import { Jumbotron, Button } from "react-bootstrap"
+import {Button } from "react-bootstrap"
 import styles from 'MainJumbotron.module.css'
 
 const MainJumbotron = () =>{
@@ -9,7 +9,7 @@ const MainJumbotron = () =>{
     
 
     <div className=' btn-lg'>
-      <Jumbotron >
+      <div >
         <h1 className="animate__animated animate__bounceInRight display-3">Marcu Alexandru</h1>
         <p className="animate__animated animate__bounceInLeft h2 main">Web Developer si Specialist Seo</p>
         <hr className="my-2" />
@@ -19,7 +19,7 @@ const MainJumbotron = () =>{
           id='hero'
           href='#' ><span className='btn-text'>Citeste mai mult</span></Button>
        
-      </Jumbotron>
+      </div>
     </div>
 
     <style global jsx>{`
