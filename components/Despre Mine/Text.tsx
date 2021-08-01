@@ -28,6 +28,8 @@ import styles from './Text.module.css'
      </Modal>
 
     <Container className={styles.blackTransparent}>
+        <Container className={'m-1'} >
+
         <h1 className='text-center'>Despre Mine</h1>
         <hr />
         <p>
@@ -37,8 +39,9 @@ import styles from './Text.module.css'
         <p>Însă lucrurile nu se opresc aici. Cred în căutarea, dar mai ales în descoperirea vocației, iar asta m-a făcut să învăț programare pe cont propriu. Și așa mi-am descoperit vocația. A urmat primul proiect și primul client mulțumit. </p>
         <p>Aștept să ne cunoaștem, pentru a materializa ideile tale, la cel mai înalt standard de calitate.</p>
        <div>
-       <Button onClick={handleShow} className='d-block mx-auto' size={'lg'} variant={'primary'}>Completeaza Formularul Acum!</Button>
+       <Button onClick={handleShow} className='m-3 d-block mx-auto' size={'lg'} variant={'primary'}>Completeaza Formularul Acum!</Button>
        </div>
+        </Container>
     </Container>
     </>)
 
