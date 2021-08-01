@@ -4,7 +4,7 @@ import FirstSection from '../components/FirstSection/FirstSection'
 import FormularText from '../components/Formular+Text/Formular+Text'
 import SecondSection from '../components/SecondSection/SecondSection'
 import Footer from '../components/Footer/Footer'
-
+import styles from '../styles/Home.module.css'
 
 
 
@@ -23,13 +23,27 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className={styles.Home}>
   
    <FirstSection />
    <SecondSection />
  <FormularText text={texte}/>
 
-   
-  </>
+   <style global jsx>{`
+   :root{
+    --background-image-main: url(/img/background/background3.jpg);
+}
+
+html, body{
+  background-image: var(--background-image-main);
+  background-blend-mode:soft-light ;
+  background-attachment: fixed;
+  background-color:rgba(255, 255, 255, 0.74);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+     `}</style>
+  </div>
   )
 }
