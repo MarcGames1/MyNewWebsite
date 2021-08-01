@@ -1,8 +1,6 @@
  import React, {useState} from 'react'
-import { Accordion, Button, Container, Modal } from 'react-bootstrap'
+import { Button, Container, Modal } from 'react-bootstrap'
 import FormularContact from '../FormularContact/FormularContact'
-import Whatsapp from '../Social-Media/whatsapp'
-import AccordionForm from './AccordionForm.jsx'
 import styles from './Text.module.css'
  
  function AboutText_Form  () {
@@ -31,6 +29,7 @@ import styles from './Text.module.css'
 
     <Container className={styles.blackTransparent}>
         <h1 className='text-center'>Despre Mine</h1>
+        <hr />
         <p>
         Sunt Alexandru Marcu, iar parcursul meu profesional este unul cel puțin interesant – cel puțin așa îl definesc  eu. 
         </p>
