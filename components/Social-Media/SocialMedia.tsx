@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+
 import { Button, ButtonGroup, Col, ToggleButton } from "react-bootstrap"
 import Facebook from "./facebook"
 import Mail from './mail'
@@ -13,8 +14,8 @@ import Whatsapp from './whatsapp'
 
 
  function SocialMedia (props: {
-   
-  col_md:  number | boolean | { span?: (boolean | "auto" | (number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12")) | undefined; offset?: (number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12") | undefined; order?: ((number | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12") | "first" | "last") | undefined } | undefined })
+     col_md: number
+   })
   
   {
 
@@ -32,7 +33,7 @@ import Whatsapp from './whatsapp'
    
     let FacebookUrl :string = 'www.facebook.com'
     let whatsappUrl :string ='https://wa.me/+40751606444'
-
+   
    
     return(
       <>
