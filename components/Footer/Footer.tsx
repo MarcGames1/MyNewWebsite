@@ -12,8 +12,8 @@ const Footer =()=>{
     <Row>
 
 <Col>
-<h5 className="text-uppercase font-weight-bold mb-4">Footer Content</h5>
-<p>Here you can use rows and columns here to organize your footer content.</p>
+<h5 className="text-uppercase font-weight-bold mb-4">Alexandru Marcu</h5>
+<p>Toate drepturile sunt rezervate</p>
 </Col>
 
 {/* Prima Coloana */}
@@ -36,26 +36,16 @@ const Footer =()=>{
 <hr className="w-100 clearfix d-md-none"/>
 
 
-{/* A 3 a Coloana */}
 <Col>
 <ListGroup>
-  <p className='h3 text-center'>Servicii</p>
-  <ListGroup.Item> 1</ListGroup.Item>
-  <ListGroup.Item> 1</ListGroup.Item>
-  <ListGroup.Item> 1</ListGroup.Item>
-  <ListGroup.Item> 1</ListGroup.Item>
+<p className='h3 text-center'>Servicii</p>
+<a href='/creare-website'><ListGroup.Item action variant='secondary'>Site de Prezentare</ListGroup.Item></a>
+<a href='/optimizare-seo'><ListGroup.Item action variant='secondary'>Optimizare SEO</ListGroup.Item></a>
+<a href='/alte-servicii'><ListGroup.Item action variant='secondary'>Servicii Conexe</ListGroup.Item></a>
   </ListGroup>
 
 </Col>
-<Col>
-<ListGroup>
-  <p className='h3 text-center'>Contact</p>
-  <ListGroup.Item> 1</ListGroup.Item>
-  <ListGroup.Item> 1</ListGroup.Item>
-  <ListGroup.Item> 1</ListGroup.Item>
-  <ListGroup.Item> 1</ListGroup.Item>
-  </ListGroup>
-</Col>
+
 <SocialMedia col_md={3} />
 </Row>
       </Container>
