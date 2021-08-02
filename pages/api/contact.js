@@ -9,6 +9,7 @@ console.log(req.body.comments)
 
 const transporter = nodemailer.createTransport({
   port: 465,
+  
   host: "smtp.gmail.com",
   auth: {
       user: process.env.NODEMAILER_USER,
