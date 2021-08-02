@@ -10,7 +10,7 @@ const Despre = () =>{
     <Col md={6}>
     <div className= 'd-flex align-items-center justify-items-center'>
         <div className=' mx-auto my-auto img-thumbnail'>
-        <Image className={styles.img} src="/img/despre/Eu.jpg" width={500} height={500} layout='intrinsic'  />
+        <Image className={styles.img} src="/img/despre/Eu.jpg" width={500} height={500}  objectFit='contain'  layout='intrinsic'  />
         </div>
 
     </div>
