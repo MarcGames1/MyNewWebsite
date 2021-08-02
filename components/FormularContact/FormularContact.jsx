@@ -52,7 +52,7 @@ function FormularContact() {
   
     return (<Alert variant={'primary'}>
       <h6 className='h4 text-center'>Contact </h6>
-      <Form name="contact" noValidate validated={validated} onSubmit={handleSubmit}>
+      <Form name="contact" method='POST' data-netlify='true' noValidate validated={validated} onSubmit={handleSubmit}>
       <input type="hidden" name="form-name" value="contact" />
         <Row className="mb-3">
           <Form.Group as={Col} md="6" controlId="validationCustom01">
