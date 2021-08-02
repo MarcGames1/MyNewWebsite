@@ -22,7 +22,8 @@ const Despre = () =>{
 
     <style global jsx>{`
    body{
-    
+    height:auto;
+    width:100vw;
    background-image: url(/img/background/Desprebg2.jpg) !important;
    background-size: cover;
   background-repeat: no-repeat;
