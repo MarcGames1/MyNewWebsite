@@ -20,7 +20,6 @@
     "@types/react-gtm-module": "^2.0.0",
     "animate.css": "^4.1.1",
     "axios": "^0.21.1",
-    "babel-plugin-inline-import-data-uri": "^1.0.1",
     "bootstrap": "^5.0.2",
     "dotenv": "^10.0.0",
     "next": "^10.2.3",
