@@ -4,13 +4,14 @@ import Image from 'next/image'
 import Text from "../components/Despre Mine/Text"
 import styles from '../styles/Despre.module.css'
 const Despre = () =>{
-
+const me_img :string = '/img/despre/Eu.jpg'
+const bg_img :string =''
     return(<Container fluid>
         <Row className='d-flex align-content-center justify-content-center'>
     <Col md={6}>
     <div className= 'd-flex align-items-center justify-items-center'>
         <div className=' mx-auto my-auto img-thumbnail'>
-        <Image className={styles.img} src="/img/despre/Eu.jpg" width={500} height={500}  objectFit='contain'  layout='intrinsic'  />
+        <Image className={styles.img} src={me_img} width={500} height={500}  objectFit='cover'  layout='intrinsic'  />
         </div>
 
     </div>
