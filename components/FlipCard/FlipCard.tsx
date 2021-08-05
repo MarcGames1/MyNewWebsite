@@ -35,7 +35,7 @@ function FlipCard (props: {
     </Card.ImgOverlay>
 
 </Card>
-<div className='back flipCard' onClick={flipFront}>
+<div className='back flipCard'>
  
   <Card.Body className='noselect d-flex flex-column' >
     <Card.Title className=' align-top justify-top text-center'>{props.title}</Card.Title>
