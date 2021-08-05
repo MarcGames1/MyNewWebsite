@@ -1,6 +1,6 @@
-import React, {ReactNode, useState} from "react"
+import React, {ReactNode} from "react"
 import { Card } from "react-bootstrap"
-import ReactCardFlip from "react-card-flip"
+
 
 
 function FlipCard (props: { 
@@ -20,15 +20,7 @@ function FlipCard (props: {
 
 }){
 
-    const [isflipped, setFlipped] = useState(false)
-
-    const flipCard = ()=>{
-    
-        setFlipped(true);
-    }
-    const flipFront = () => {
-        setFlipped(false);
-    }
+  
 
     return(<>
 
