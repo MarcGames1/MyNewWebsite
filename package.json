@@ -30,7 +30,6 @@
     "nodemailer": "^6.6.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.4",
-    "react-card-flip": "^1.1.1",
     "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
     "react-intersection-observer": "^8.32.0",

@@ -17,7 +17,7 @@ const MainJumbotron = () =>{
        
           <Button className='rounded animate__animated animate__bounceInLeft' 
           id='hero'
-          href='#' ><span className='btn-text'>Citeste mai mult</span></Button>
+          href='#serviceMainBlock' ><span className='btn-text'>Citeste mai mult</span></Button>
        
       </div>
     </div>
