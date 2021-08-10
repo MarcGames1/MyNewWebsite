@@ -15,10 +15,10 @@ function FirstSection(){
     return(<>
    <Container fluid className='hero'>
    <Row className='align-items-center'>
-<Col  md={5} xs={12} sm={12}>
+<Col  md={7} xs={12} sm={12}>
 <MainJumbotron  />
 </Col>
-    <Col className='hero' md={7} xs={12} sm={12}>
+    <Col className='hero' md={5} xs={12} sm={12}>
 <Image 
     className={styles.hero_img}
     src={myImg} 

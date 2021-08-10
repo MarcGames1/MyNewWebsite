@@ -11,7 +11,7 @@ const bg_img :string =''
     <Col md={6}>
     <div className= 'd-flex align-items-center justify-items-center'>
         <div className=' mx-auto my-auto img-thumbnail'>
-        <Image className={styles.img} src={me_img} alt='Alexandru Marcu' width={500} height={500}  objectFit='cover'  layout='intrinsic'  />
+        <Image className={styles.img} src={'/img/Despre/Eu.webp'} alt='Alexandru Marcu' width={500} height={500}  objectFit='cover'  layout='intrinsic'  />
         </div>
 
     </div>
@@ -25,7 +25,7 @@ const bg_img :string =''
    body{
     height:auto;
     width:100vw;
-   background-image: url(/img/background/Desprebg2.jpg) !important;
+   background-image: url('/img/background/DespreBg2.jpg') !important;
    background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

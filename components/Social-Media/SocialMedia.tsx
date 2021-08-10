@@ -31,7 +31,7 @@ import Whatsapp from './whatsapp'
 
     let height :string = '30px' 
    
-    let FacebookUrl :string = 'www.facebook.com'
+    let FacebookUrl :string = 'https://www.facebook.com/Marcu-Alexandru-Web-Developer-si-Specialist-SEO-111509721176850'
     let whatsappUrl :string ='https://wa.me/+40751606444'
    
    

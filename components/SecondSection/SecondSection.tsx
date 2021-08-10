@@ -37,7 +37,7 @@ const SecondSection = () => {
     return (<>
 
         <Container fluid>
-            <CardGroup className='m-2 gap-4' id="serviceMainBlock">
+            <CardGroup className='bg_gray mb-2 gap-4' id="serviceMainBlock">
                 <Link href={developer.href}>
             <Card className={'ServiceBox '+developer.type}> 
             <WebdevSvg height={48} color={developer.color}/>
