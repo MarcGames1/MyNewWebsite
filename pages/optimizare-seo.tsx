@@ -44,8 +44,9 @@ front = {{
 back ={{
     body:<> <p> Generarea rapoartelor de cuvinte cheie pentru fiecare pagina a site-ului</p>
     <ListGroup>
-    <ListGroupItem>Recomandări structura Url</ListGroupItem>
-    <ListGroupItem>Meta-titlu, meta-descriere si elemente heading</ListGroupItem>
+    <ListGroupItem><Checkmark height={20} color={'green'} /> Recomandări structura Url</ListGroupItem>
+    <ListGroupItem><Checkmark height={20} color={'green'} /> Meta-titlu, meta-descriere si elemente heading</ListGroupItem>
+    <ListGroupItem><Checkmark height={20} color={'green'} /> Realizare Arhitectura SEO a site-ului</ListGroupItem>
     </ListGroup>
     </>
 }}
@@ -74,7 +75,15 @@ front = {{
 back ={{
     body:<> <p> <Checkmark height={30} color={'green'} /> Auditul de performanță al paginii web vine însoțit și recomandări pentru optimizarea site-ului, astfel încât după aplicarea lor, acesta să fie cât mai vizibil. </p>
     <p><Checkmark height={30} color={'green'} /> Site-urile create de mine au parametri optimi de viteză, astfel încât motorul de căutare Google nu va penaliza site-ul pentru timpul de încărcare.
-    </p></>
+    </p>
+    <Image
+    src='/img/seo/demo.png'
+    alt='Demo'
+    layout='responsive'
+    width={600}
+    height={300}
+    />
+    </>
 }}
 title={'Audit de performanță al paginii web'}
 />

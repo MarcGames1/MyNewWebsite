@@ -29,7 +29,7 @@ function FlipCard (props: {
   <Card.Img src={props.front.img} alt={props.front.altImg} />
   <Card.ImgOverlay className='front-overlay d-flex flex-column align-content-center justify-content-between'>
 
-    <Card.Title className='text-center bg-secondary-transparent fw-bolder'>{props.title}</Card.Title>
+    <Card.Title className='text-center my-auto bg-secondary-transparent fw-bolder'>{props.title}</Card.Title>
    
     
     </Card.ImgOverlay>
