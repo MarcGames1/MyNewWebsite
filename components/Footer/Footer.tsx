@@ -46,7 +46,7 @@ const Footer =()=>{
 <p className='h3 text-center'>Servicii</p>
 <a href='/creare-website'><ListGroup.Item action variant='secondary'>Site de Prezentare</ListGroup.Item></a>
 <a href='/optimizare-seo'><ListGroup.Item action variant='secondary'>Optimizare SEO</ListGroup.Item></a>
-<a href='/alte-servicii'><ListGroup.Item action variant='secondary'>Servicii Conexe</ListGroup.Item></a>
+<a href='/alte-servicii'><ListGroup.Item action variant='secondary'>Alte Servicii</ListGroup.Item></a>
   </ListGroup>
 
 </Col>
