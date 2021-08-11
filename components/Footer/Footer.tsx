@@ -1,11 +1,15 @@
+
+
 import React from "react"
 import {Row, Container, Col, ListGroup } from "react-bootstrap"
+import FB_Page from "../FB_Page/FB_Page"
 import SocialMedia from "../Social-Media/SocialMedia"
 
 const Footer =()=>{
 
 
     return (<>
+
     <Container fluid className='bg-dark text-white'>
       <Container>
 
@@ -14,6 +18,7 @@ const Footer =()=>{
 <Col>
 <h5 className="text-uppercase font-weight-bold mb-4">Alexandru Marcu</h5>
 <p>Toate drepturile sunt rezervate</p>
+<SocialMedia col_md={3} />
 </Col>
 
 {/* Prima Coloana */}
@@ -45,8 +50,11 @@ const Footer =()=>{
   </ListGroup>
 
 </Col>
+<Col>
+<FB_Page />
+</Col>
 
-<SocialMedia col_md={3} />
+
 </Row>
       </Container>
     </Container>
