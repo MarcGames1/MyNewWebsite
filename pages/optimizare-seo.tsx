@@ -102,9 +102,9 @@ front = {{
 }}
 back ={{
     body: <>  <ListGroup variant="flush">
-    <ListGroup.Item>Cras justo odio</ListGroup.Item>
-    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+    <ListGroup.Item><Checkmark height={30} color={'green'} /> Un blog te poate ajuta cu atragerea de trafic pe site ul tau</ListGroup.Item>
+    <ListGroup.Item><Checkmark height={30} color={'green'} /> Cu ajutorul blogului poti creea o palnie de vanzare cu ajutorul careia vei prelua un potential client din momentul in care acesta constientizeaza ca are o nevoie pana in monemtul in care iti cumpara produsul sau serviciul</ListGroup.Item>
+    <ListGroup.Item><Checkmark height={30} color={'green'} /> Te ajuta sa iti cresti notorietatea in mediul online chiar daca nu vei face intotdeauna vanzari din articole de blog, te vei pozitiona ca un expert pe domeniul tau de activitate iar potentiali clienti vor fi recunoscatori pentru informatiile pe care le-ai oferit creand astfel o relatie de lunga durata cu acestia</ListGroup.Item>
   </ListGroup> </>
 }}
 title={'Plan de conținut și structură pentru articole de blog'}
@@ -122,7 +122,8 @@ front = {{
 }}
 back ={{
     body: <>  <Alert variant="flush">
-    <Alert.Heading className='text-center'>Cu ce te ajută advertorialul SEO?</Alert.Heading>
+    <Alert.Heading className='text-center'>Cu ce te ajuta un plan de Link Building?</Alert.Heading>
+    <ListGroup.Item variant='primary'><Checkmark height={20} color={'green'} />Linkurile care vin de la alte site-uri sunt ca niste voturi de incredere pe care le primesti, iar acestea sunt un factor deosebit de important care te ajuta sa ajungi in prima pozitie pe Google</ListGroup.Item>
     <ListGroup.Item variant='primary'><Checkmark height={20} color={'green'} />Să urci și să te menții pe termen lung în prima pagină de căutări a Google.</ListGroup.Item>
     <ListGroup.Item variant='primary'><Checkmark height={20} color={'green'} /> Să conturezi o imagine profesională a brandului tău pentru utilizatori.</ListGroup.Item>
     <hr />
@@ -132,7 +133,7 @@ back ={{
   </Alert>   </>
 }}
 
-title={'Plan personalizat de advertoriale SEO'}
+title={'Plan personalizat Link Building'}
 
     
    
