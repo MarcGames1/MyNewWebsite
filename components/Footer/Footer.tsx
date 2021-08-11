@@ -50,7 +50,12 @@ const Footer =()=>{
   </ListGroup>
 
 </Col>
-<Col>
+
+
+<hr className="w-100 clearfix d-md-none"/>
+
+
+<Col className='d-flex my-auto justify-content-center'>
 <FB_Page />
 </Col>
 
