@@ -1,9 +1,8 @@
+import { NextSeo } from 'next-seo'
 import React from 'react'
-import MainNav from '../components/navbar/mainNav'
 import FirstSection from '../components/FirstSection/FirstSection'
 import FormularText from '../components/Formular+Text/Formular+Text'
 import SecondSection from '../components/SecondSection/SecondSection'
-import Footer from '../components/Footer/Footer'
 import styles from '../styles/Home.module.css'
 
 
@@ -20,11 +19,12 @@ export default function Home() {
     'Conectare cu Google Search Console',
   ]
     
-
+const title ='Webdesigner ✔️ Web Developer ✔️ Specialist SEO'
+const description = 'Adu-ti afacerea pe prima pagina in Google cu strategii care dau rezultate pe termen lung  ✅ Servicii de Webdesign ✅ Creare Siteuri ✅ SEO ✅'
 
   return (
     <div className={styles.Home}>
-  
+   <NextSeo title = {title} description ={description}/>
    <FirstSection />
    <SecondSection />
  <FormularText text={texte}/>

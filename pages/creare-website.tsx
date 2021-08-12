@@ -12,6 +12,7 @@ import TestingSvg from "../components/SVG.components/TestingSvg"
 import DebugSVG from "../components/SVG.components/DebugSvg"
 import OptimizareSVG from "../components/SVG.components/Optimizare"
 import MentenantaSVG from "../components/SVG.components/mentenanta"
+import { NextSeo } from "next-seo"
 
 
 
@@ -29,7 +30,8 @@ function Page() {
     'Mentenanta si Administrare Serviciul de mentenanta -> asigur buna functionare a siteului si orice alte modificari pe care le doreste clientu (se plateste lunar sau anual)',
   ]
 
-
+const title = 'Creare Site Web de Prezentare ✔️ Alexandru Marcu'
+const description =''
   let cuprins = [
 
     new CuprinsElement('1', 'Reprezentarea vizuala a websiteului', '#1', paragrafe[0]),
@@ -59,7 +61,7 @@ try{
  
    
    return (<>
-    
+    <NextSeo title = {title} description ={description}/>
     <Container fluid>
       <h1 className='text-center'>Creare Site Web</h1>
       <Row>

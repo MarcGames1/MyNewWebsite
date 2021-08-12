@@ -5,18 +5,21 @@ import HeaderInFunctieDeCuprins from '../components/HeaderInFunctieDeCuprins/Hea
 import CuprinsElement from '../Classes/CuprinsElement'
 import FlipCard from '../components/FlipCard/FlipCard';
 import Checkmark from '../components/SVG.components/checkmark';
+import { NextSeo } from 'next-seo'
 
 
 
 function SeoPage(){
 
-
+const title='Optimizare Seo  cu Rezultate ✔️ Alexandru Marcu'
+const description =''
 
 
 
     // De facut Iconite Vectori cu Cartonase care arata textul la hover? sau ceva de genul
 
     return(<>
+     <NextSeo title = {title} description ={description}/>
     <Container>
 
     <h1 className='text-center'>Optimizare Seo</h1>
