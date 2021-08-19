@@ -35,7 +35,8 @@ function FormularContact() {
           'Accept': 'application/json, text/plain, */*',
           'content-type': 'application/json'
         }
-        axios.post('/api/contact',data, headers)
+        // to do de trimis datele in whatsapp
+        axios.post('/api/whatsapp',data, headers)
         .then((response) => {
           alert("Formularul s-a trimis cu succes, Va voi contacta curand");
           console.log(response)
