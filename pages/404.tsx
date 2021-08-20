@@ -1,7 +1,7 @@
 import React from "react";
-import { Alert, Button } from "react-bootstrap";
+import { Alert, Button, Container } from "react-bootstrap";
 import Image from 'next/image'
-import { Container } from "next/app";
+
 export default function Custom404() {
     return (<>
     <Alert variant={'danger'}>
