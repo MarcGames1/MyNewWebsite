@@ -1,6 +1,5 @@
-import { Container } from "next/app"
+
 import React from "react"
-import { Card } from "react-bootstrap"
 import Portofoliu from "../Classes/entry/portofoliu"
 import PortofoliuElement from "../components/PortofoliuElement/PortofoliuElement"
 
@@ -22,7 +21,7 @@ const doruBotea = new Portofoliu('Avocat Doru Botea',
              'Administrare cont Google my Buisness',
               'Campanii Google Ads' ])
 
-console.log(doruBotea)
+
     return(<>
    <PortofoliuElement {...doruBotea} />
     </>)
